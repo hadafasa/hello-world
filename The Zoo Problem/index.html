@@ -4,6 +4,8 @@
         <title>The Zoo Problem</title>
         <link rel="stylesheet" type="text/css" href="styles.css"    />
     </head>
+    <!--The start of my website, this is where i decided most of the rulesets on style or look, I could have tried to figure out how to place this somewhere else or within the style.css but I ended up just working it with this because i changed how
+    the website looked and placed things differently a lot. A lot of experimental work trying to learn this for the first time. Within time I will make this much cleaner and readable.-->
     <style>
         header {
             margin: auto;
@@ -51,39 +53,49 @@
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             text-align: center;
-            font-size: 25px;
+            font-size: 22px;
             font-family:sans-serif;
-            padding:5px;
+            padding: 1px;
+        }
+        li {
+            font-size: 20px;
         }
     </style>
+    <!--Here is the header/title of the website-->
     <header>
         <h1>Zoo Animals</h1>
     </header>
+    <!--The body starts here and I decided to section it off for each type of animal, from there I put in a div with a paragraph of facts of each animal, 
+        next shows the unordered lists of the animal names and the facts. Lastly shows the additional information on each animal if the user is interestesd-->
     <body>
         <section style="background-color: darksalmon;">
             <h2 style="color:rgb(204, 75, 15); text-align:center; font-size:40px;">Bears</h2>
+            <!--Each image shown i wanted to keep its aspect ratio so I set the ruleset to keep all the widths the same but the height to just be auto to keep that good resoluton and aspect ratio-->
             <img src="bears.jpg" alt="bears" />
+            <!--Here is where i placed the div-->
             <div style="background-color: rgb(245, 89, 89);">
+                <!--Within the div is this <p> along with an unordered list within it-->
                 <p style="font-weight:bold;">Bear Facts</p>
                 <ul>
                     <li>Bears have layers on layers of thick coats, a polar bear's coat is made up of two unique layers:
-                        The shorter coat provides insulation from weather, while the longer coat prevents water from reaching
-                        the short coat layer and skin</li>
-                    <li>Grizzly bears possess a biting force of over 1200psi, which is enough to crush a bowling ball or an iron skillet </li>
-                    <li>A lesser-known fact about bears is that they are among the most intelligent land animals, they have the largest and most complex brains compared to other mammals their size,
-                         and they rely on this brain for a number of behaviors </li>
+                        The first coat provides insulation from weather, while the second larger coat prevents water from reaching
+                        the first coat layer and skin</li>
+                    <li>Grizzly bears possess a biting force of over 1200psi, which is enough to crush a bowling ball </li>
+                    <li>Bears are also some of the most intelligent land animals, they have the largest and most complex brains compared to other mammals their size </li>
                 </ul>
                 <p style="font-weight:bold;"> We take care of mainly three bears in our sanctuary shown in our photo</p>
             </div>
+            <!--I made the animal name list as an aside because of how it turned out to be placed on the website-->
                 <aside>
                     <ul>
-                        <li>Ollie</li>
-                        <li>Mona</li>
-                        <li>Lisa</li>
+                        <li>Ollie - Our smallest brown bear of the bunch laying on Mama bears' back</li>
+                        <li>Mona - Big Mama bear keeping watch over her young ones</li>
+                        <li>Lisa - A trouble maker but cute and playful one nonetheless</li>
                     </ul>
                 </aside>
+                <!--Lastly I placed additional information url within the article tag which is placed on the bottom of the section. From here each animal type is basically rinse and repeat but just different coloring or sizes-->
                 <article>
-                    <a href="https://www.britannica.com/animal/bear">Britannica Bears</a>
+                    <p>Here you can find more information on <a href="https://www.britannica.com/animal/bear">bears</a></p>
                 </article>
         </section>
         <section style="background-color: rgb(178, 204, 238);">
@@ -91,15 +103,15 @@
             <div style="background-color:rgb(195, 238, 250);">
                 <p style="font-weight:bold;">Giraffe Facts</p>
                 <ul>
-                    <li>Well known for their long necks, these gentle giants are the world's tallest living land animals.
+                    <li>Well known fact is they are the world's tallest living land animals.
                         An adult male can grow to around 5.5m - that's taller than three adult humans!
                     </li>
-                    <li>Herbivores, giraffes only eat plants. Their favourite grub is the acacia tree,
+                    <li>Giraffes mainly eat plants. Their favourite is the acacia tree,
                         and they use their long necks to reach the leaves and buds in the treetops.
-                        Their long tongues (which grow to a whopping 53cm!) also help them pull down leaves growing up high
+                        Their long tongues also help them pull down leaves growing up too high
                     </li>
-                    <li> And boy do these guys have an appetite! They spend most of their time eating, and can guzzle up to 45kg of leaves and twigs a day!
-                        Whilst they may eat a lot, giraffes don't drink much water. This because they get most of their water from their leafy meals, and only need to drink once every few days.
+                    <li>They spend most of their time eating, and can eat up to 45kg of vegetation a day!
+                        Whilst they may eat a lot, giraffes don't drink much water. Most of the hydration they get is from their meals and can go days without it
                     </li>
                 </ul>
                 <p style="font-weight:bold;"> That is Frankie posing for us in the photo with Coconut in the background feasting</p>
@@ -107,12 +119,12 @@
             <img src="giraffes.jpg" alt="giraffes" />
                 <aside>
                     <ul>
-                        <li>Frankie</li>
-                        <li>Coconut</li>
+                        <li>Frankie - The photogenic goofball</li>
+                        <li>Coconut - Always wanting to eat, never seems to stop</li>
                     </ul>
                 </aside>
                 <article style="background-color: rgb(212, 250, 250);">
-                    <a href="https://www.britannica.com/animal/giraffe">Britannica Giraffes</a>
+                   <p>Here you can find more information on <a href="https://www.britannica.com/animal/giraffe">giraffes</a></p>
                 </article>
         </section>
         <section style="background-color: rgb(139, 191, 124);">
@@ -129,12 +141,12 @@
             <img src="lions.jpg" alt="lions" />
                 <aside>
                     <ul>
-                        <li>Mella</li>
-                        <li>Karl</li>
+                        <li>Mella - Cozy and cuddly, does not like to play with anyone else but Karl</li>
+                        <li>Karl - Bored and lazy, Mella gets on the nerves sometimes</li>
                     </ul>
                 </aside>
                 <article style="background-color:rgb(198, 221, 175)">
-                    <a href="https://www.britannica.com/animal/lion">Britannica Lions</a>
+                    <p>Here you can find more information on <a href="https://www.britannica.com/animal/lion">lions</a></p>
                 </article>
         </section>
         <section style="background-color:rgb(224, 187, 228)">
@@ -144,7 +156,7 @@
                 <ul>
                     <li>Not all primates are monkeys, one big difference between monkeys and other primates is in the tail:
                         Most monkeys have tails, while apes and other primates do not.</li>
-                    <li>For monkeys, picking bugs, dirt, and other debris off their companions is far from just personal hygiene - its an expression of affection and love.</li>
+                    <li>For monkeys, picking bugs, and dirt off their companions is far from just personal hygiene - its an expression of affection and love.</li>
                     <li>Monkeys eat far more than just bananas: Monkeys are mostly omnivorous, eating nuts, fruits, leaves, flowers, vegetables, bark, roots, rodents, birds, invertebrates, pretty much anything they can find in their habitat</li>
                 </ul>
                 <p style="font-weight:bold;">This is a family helping each other be clean and showing love!</p>
@@ -152,14 +164,14 @@
             <img src="monkeys.jpg" alt="monkeys" />
                 <aside>
                     <ul>
-                        <li>Cookie</li>
-                        <li>Earl</li>
-                        <li>Banana Pudding</li>
-                        <li>Yogurt</li>
+                        <li>Cookie - Smallest and youngest, doesnt know how to groom well yet</li>
+                        <li>Earl - The oldest, always has to clean up after everyones mess</li>
+                        <li>Banana Pudding - seems aggressive but just always wants to play rough</li>
+                        <li>Yogurt - Goes hand in hand with Banana Pudding, scares off little kids a lot with erratic behavior</li>
                     </ul>
                 </aside>
                 <article style="background-color:rgb(254, 200, 216)">
-                    <a href="https://www.britannica.com/animal/monkey">Britannica Monkeys</a>
+                    <p>Here you can find more information on <a href="https://www.britannica.com/animal/monkey">monkeys</a></p>
                 </article>
         </section>
         <section style="background-color:rgb(255, 196, 140)">
@@ -177,13 +189,13 @@
             <img src="alligators.jpg" alt="alligators">
                 <aside>
                     <ul>
-                        <li>Wren</li>
-                        <li>Aspen</li>
-                        <li>Mika</li>
+                        <li>Wren - Usually hiding somewhere</li>
+                        <li>Aspen - Never stops moving, except when there are too many people, then it is calm and stift</li>
+                        <li>Mika - Yound one usually wanting attention and food</li>
                     </ul>
                 </aside>
                 <article style="background-color:rgb(244, 161, 102)">
-                    <a href="https://www.britannica.com/animal/alligator">Britannica Alligators</a>
+                   <p>Here you can find more information on <a href="https://www.britannica.com/animal/alligator">alligators</a></p>
                 </article>
         </section>
     </body>
