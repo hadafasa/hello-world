@@ -1,6 +1,6 @@
 .wrapper {
     display:grid;
-    grid-template-columns:1fr 2fr 1fr;
+    grid-template-columns:repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
     gap:1em;
     padding-top:0.5em;
@@ -30,42 +30,66 @@
     padding:1em;
 }
 .titlebox {
-    grid-column:1/4;
+    grid-column:1/5;
     grid-row:1;
     text-align:center;
     font-size:40px;
     margin-left: 400px;
     margin-right: 400px;
 }
+/* box1 is the pantry, largest box in the html */
 .box1 {
-    grid-column:1/3;
+    grid-column:1/4;
     grid-row:2/6;
     border-radius:20px;
 }
+/* box2 is "For the Fridge" */
 .box2 {
-    grid-column:3;
+    grid-column:4;
     grid-row:2/6;
     border-radius:20px;
 }
+/* box3 is "For the Freezer" */
 .box3 {
-    grid-column:2/4;
+    grid-column:3/5;
     grid-row:6/8;
     border-radius:20px;
 }
+/* box4 is "Treats and Snacks" */
 .box4 {
-    grid-column:1;
+    grid-column:1/3;
     grid-row:6/8;
     border-radius:20px;
 }
 .mini {
     grid-column:3/5;
+    border-radius:10px;
 }
-.mini1 {
+.minia {
     grid-row:1/3
 }
-.mini2 {
+.minib {
     grid-row:3/5
 }
-.mini3 {
+.minic {
     grid-row:5/7;
+}
+.minibox {
+    grid-column:1/3;
+    grid-row:1/7;
+    border:#333 1px solid;
+    border-radius:10px;
+}
+@media screen and (min-width: 736px)
+{
+    .wrapper {
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap:1em;
+        padding-top:0.5em;
+        padding-left:2em;
+        padding-right:2em;
+        opacity: 0.85;
+    }
 }
