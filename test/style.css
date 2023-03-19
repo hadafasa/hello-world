@@ -1,0 +1,27 @@
+.warning {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px
+}
+
+.warning img {
+    width: 100%;
+}
+
+.warning p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
+
+.container {
+font-family: arial;
+font-size: 24px;
+margin: 25px;
+outline: dashed 1px black;
+position: relative;
+}
