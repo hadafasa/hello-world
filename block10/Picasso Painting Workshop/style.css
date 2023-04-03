@@ -1,0 +1,135 @@
+body {
+    padding: 20px;
+}
+.canvas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+.box1 {
+    height: 250px;
+    width: auto;
+    background-color: #03989e;
+}
+.box2 {
+    height: 250px;
+    width: auto;
+    background-color: #03989e;
+}
+.box3 {
+    height: 250px;
+    width: auto;
+    background-color: #03989e;
+}
+.box4 {
+    height: 450px;
+    width: auto;
+    margin-top: -97px;
+    grid-row: 2;
+    grid-column: 1/4;
+    background-color: #03989e;
+}
+.box5 {
+    height: 50px;
+    width: auto;
+    grid-row: 3;
+    grid-column: 1/4;
+    background-color: #c9e265;
+}
+.submit {
+    position: absolute;
+    margin-top: 30px;
+}
+.triangle {
+    z-index: 30;
+}
+.triangle1 {
+    width: 0px;
+    height: 0px;
+    border-bottom: 600px solid #008037;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom-color: #008037;
+    position: relative;
+    z-index: 90;
+    margin-left: 1040px;
+    margin-top: -280px;
+}
+.triangle2 {
+    width: 0px;
+    height: 0px;
+    border-bottom: 400px solid #c9e265;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom-color: #c9e265;
+    position: relative;
+    z-index: 100;
+    margin-left: 1347px;
+    margin-top: -500px;
+}
+.pinksmallcircle1 {
+    background-color: #ff8888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 60;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.pinksmallcircle2 {
+    background-color: #ff8888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 50;
+    margin-left: 70px;
+    margin-top: 150px;
+}
+.pinksmallcircle3 {
+    background-color: #ff8888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 40;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+.pinklargecircle1 {
+    background-color: #ff8888;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: -83px;
+    margin-top: 50px;
+    z-index: 110;
+}
+.pinklargecircle2 {
+    background-color: #ff8888;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 538px;
+    margin-top: -120px;
+    z-index: 110;
+}
+.goldlargecircle1 {
+    background-color: #ffde59;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 350px;
+    margin-top: -220px;
+}
+.goldsmallcircle1 {
+    background-color: #ffde59;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: -475px;
+    z-index: 120;
+}
