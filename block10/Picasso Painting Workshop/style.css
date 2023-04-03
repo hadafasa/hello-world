@@ -133,3 +133,26 @@ body {
     margin-top: -475px;
     z-index: 120;
 }
+/* For desktop screens */
+@media (min-width: 1200px) {
+  .media {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .media {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .media {
+    max-width: 100%;
+    height: auto;
+  }
+}
