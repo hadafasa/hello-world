@@ -45,7 +45,7 @@ checkTruthy(undefined); // expected output: undefined is falsy
 checkTruthy(0); // expected output: The number 0 is falsy (the only falsy number)
 checkTruthy(""); // expected output: The empty string is falsy (the only falsy string)
 
-// End of Question #e
+// End of Question #1
 
 // Question #2: Number Line
 
@@ -105,7 +105,7 @@ checkGreaterOrEqual(5, 5); // expected output: true
 
 // im going to go about this kind of the same way as previous question but using checkTruthy instead
 
-function checkTruthy(param1A, param1B, param2A, param2B) {
+function checkFalsy(param1A, param1B, param2A, param2B) {
     if ((param1A && param1B) || (param2A && param2B)) {
       console.log(true);
     } else {
@@ -113,11 +113,11 @@ function checkTruthy(param1A, param1B, param2A, param2B) {
     }
   }
   
-  checkTruthy("cat", "cat", 6, "6"); // expected output: true
-  checkTruthy("five", 5, "dog", "dawg"); // expected output: false
-  checkTruthy(0, false, "horse", "horse"); // expected output: true
-  checkTruthy("eight", "eight", "ate", "ate"); // expected output: true
-  checkTruthy(11, "eleven", "four", "for"); // expected output: false
-  checkTruthy("cake", "cake", "pie", "pie"); // expected output: true
+  checkFalsy("cat", "cat", 6, "6"); // expected output: true
+  checkFalsy("five", 5, "dog", "dawg"); // expected output: false
+  checkFalsy(0, false, "horse", "horse"); // expected output: true
+  checkFalsy("eight", "eight", "ate", "ate"); // expected output: true
+  checkFalsy(11, "eleven", "four", "for"); // expected output: false
+  checkFalsy("cake", "cake", "pie", "pie"); // expected output: true
 
   //  none of these for the last question are printing as expected but rather they are printing all true.. this i will need help with
