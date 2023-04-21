@@ -121,3 +121,28 @@ function checkFalsy(param1A, param1B, param2A, param2B) {
   checkFalsy("cake", "cake", "pie", "pie"); // expected output: true
 
   //  none of these for the last question are printing as expected but rather they are printing all true.. this i will need help with
+
+
+
+// in class answer demo
+// coming back to this in class because the wording of the assignment is a little off and interesting way of working around it
+let param1 = "five";
+let param2 = 5;
+let param3 = "dog";
+let param4 = "dawg";
+
+if (param1 === param2) {
+  console.log(true);
+} else if (param1 === param3) {
+  console.log(true);
+} else if (param1 === param4) {
+  console.log(true);
+} else if (param2 === param3) {
+  console.log(true);
+} else if (param2 === param4) {
+  console.log(true);
+} else if (param3 === param4) {
+  console.log(true);
+} else {
+  console.log(false);
+}
