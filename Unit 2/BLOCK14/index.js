@@ -25,7 +25,7 @@ console.log(result);
 let consonantCount = 0;
 let vowelCount = 0;
 
-const inputString = "hello";
+const inputString = "onomonopia";
 
 for (let i = 0; i < inputString.length; i++) {
   const currentChar = inputString[i];
