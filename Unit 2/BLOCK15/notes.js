@@ -82,3 +82,20 @@ let shoeObject = {
   // another way to simplify it or make it easier to understand
   // let randomObject = shoeObject["random"];
   // let key2 = randomObject.key2;
+
+
+
+
+//guided practice block 15
+  // You ate a cheesburger for 12 dollars
+  // jonah had the 20 steak
+  // amys soup cost 8
+  // mateo had mac and cheese for 14
+  // cheyenne 16
+// const dinner = {
+//   cheeseburger: 12,
+//   steak: 20,
+//   soup: 8,
+//   macAndCheese: 14,
+//   cheyenne: 16
+// }
