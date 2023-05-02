@@ -37,3 +37,47 @@ function holidayShopping(budget, giftTotal) {
 // Q7 Invoke the holidayShopping function by passing in the budget and giftsWithTax
 
 console.log(holidayShopping(budget, giftTotal));
+
+//below is the in class guided solution
+
+/* pseudocode
+    2 functions
+    => we want to calculate the final cost after sales tax [totalCost] 
+        - sales tax => 8%
+
+        - create first function
+            - five variables => budget, price1, price2, salestax, total
+            - total = (price1 + price2) * (1.08)
+            - withinBudget = isWithinBudget(total, budget)
+        => if we are within (true) or over budget (false) we return the relevant boolean [isWithinBudget]
+            - diff = total - budget
+            - if total > budget
+                return false
+            - if else <= budget
+                return true
+
+        totalCost(50, [20, 25]) => true
+        totalCost(100, [50, 46]) => true
+
+*/
+
+function totalCost(budget, prices) {
+    let price1 = prices[0];
+    let price2 = prices[1];
+    const salesTax = 1.08;
+    let totalCost = 0;
+    totalCost = (price1 + price2) * salesTax;
+    const withinBudget = isWithinBudget(totalCost, budget);
+    return withinBudget;
+}
+
+const isWithinBudget = (totalCost, budget) => {
+    if (totalCost > budget) {
+        return false;
+    } else {
+        return true;
+    }
+};
+
+console.log(totalCost(50, [20, 25]));
+console.log(totalCost(100, [50, 46]));

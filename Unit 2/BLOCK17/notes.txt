@@ -1,0 +1,93 @@
+may 1st class
+these methods are going to teach us shorthand or just more efficiency and resourcefulness
+these concepts will be very helpful and handy for in the future to save us time and
+make sure we have the right tools and help with debugging
+
+it is important to know where to look for debugging, asking for help or knowing how to fix the issue
+
+Node.js 
+ - node.js = environment to run code outside of the browser
+ - cross-platform
+ - open source server
+ - uses javascript
+
+node js enables creation of full stack applications with a single language ie javascript
+    - resulting in a cleaner and more consistent codebase
+facilitates rapid data transfer, allows asynchronous operations, is scalable, and has
+a large number of free tools
+
+onwards we are going to be using node.js and its tools more often
+
+in a recent study node.js
+- cut loading times by 50% - 60%
+- decreased devloping costs by 58%
+- is used by more than 30 million websites
+- rapidly speeds up startup times. In some cases, from 40 mins to under 1 min
+- decreased the number of servers needed to reach a client
+
+
+node also facilitates file oraganizatiopn through module.exports
+
+// data.js 
+const supplies = ["firewood", "matches", "tent", "water",];
+
+module.exports = supploies;
+
+and requires
+
+//index.js
+const supplies = require("./data.js")
+
+console.log(supplies);
+
+
+
+what is scope
+- current context in which variables and expressions can be referenced
+    - if a variable or expression is not in the current scope, it is not available for use and will return an error.
+- scopes have layered hierarchy
+    - children have access to parent variables and expressions;
+      however, parents do not have access to their children'
+
+scope types
+- global = the highest scope, determined by the runtime environment (node.js, a browser)
+- module = the scope for code running in a module
+- functional = the scope created within a function
+- block = the scope created with a pair of curly braces
+
+scope example 1
+const sum = 0
+
+for(let i = 0; i < 10 ; i++) {
+    let num = i;
+    console.log(sum);
+}
+
+sum is the global scope because it is out of the loop
+i and num are the block scope line 5 will run because the chld can access the parents variables
+
+in class example
+
+let sum = 5 // global variable
+
+function sumOfArray(array) {
+    // prameters are also locally scoped
+    // sum of array function is defined globally
+    // functional scope
+    let sum = 0; // local variable
+    for (let i = 0; i < array.length; i++) {
+        // block scope
+        sum += array[i];
+    }
+    return sum;
+}
+
+console.log(sum);
+console.log(sumOfArray([1, 2, 3])); // 11
+console.log(sumOfArray([3, 4, 5])); // 11 + 12 = 23
+
+the instance is inside to out so that is why the local variable to the second console.log
+as the answer is 6, think of it as going from inside to outside
+
+javascript methods
+- methods.js file
