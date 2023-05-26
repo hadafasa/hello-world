@@ -14,11 +14,12 @@ root.appendChild(h1);
 // set the image asset and add this image to the root element
 
 const image = document.createElement('img');
+// image.setAttribute("src". "img/monalisa.jpg");
 image.src = 'monalisa.jpg';
 root.appendChild(image);
 
 // add a p element description to the root element: description should read "The Mona Lisa is a famous painting"
 
 const p = document.createElement('p');
-p.textContent = 'The Mona Lisa is a famous painting.':
+p.textContent = 'The Mona Lisa is a famous painting.';
 root.appendChild(p);
