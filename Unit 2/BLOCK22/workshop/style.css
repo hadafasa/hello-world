@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-count: 50;
+    --colors: #E57373, #F06292, #BA68C8, #9575CD, #7986CB, #64B5F6, #4FC3F7, #4DD0E1, #4DB6AC, #81C784, #FFC1C1, #FFD1AA, #FFEBB3, #FFFACD, #D7FFD9, #B3E6FF, #C1D9FF, #E8CFFF, #FFCCF9, #FFD3D3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+#party-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+  
+.party {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--colors);
+}
+  
+.party h2 {
+    margin-top: 0;
+}
+  
+.party p {
+    margin-bottom: 10px;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.button-container button {
+    padding: 10px 20px;
+}
+  
+.party {
+    background-color: var(--colors);
+}
